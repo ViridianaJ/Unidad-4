@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Trebuchet MS', sans-serif; 
+    margin: 20px;
+    background-color: #f4f6ff; 
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4a4eeb; 
+    font-family: 'Courier New', monospace; 
+}
+
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4a4eeb; 
+}
+
+
+fieldset {
+    border: 2px solid #9c6ce9; 
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f7ff; 
+}
+
+legend {
+    font-weight: bold;
+    color: #4a4eeb; 
+    font-family: 'Courier New', monospace; 
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+input:focus, select:focus {
+    border-color: #4a4eeb;
+    box-shadow: 0 0 5px #4a4eeb;
+    outline: none;
+}
+
+
+button {
+    display: block;
+    margin: 15px auto;
+    background-color: #4a4eeb; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #9c6ce9;
+}
+
+
+#total-sin-descuento, #total-con-descuento {
+    font-weight: bold;
+    color: #9c6ce9; 
+    font-family: 'Courier New', monospace; 
+}
+
+#servicios .servicio {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+
+#agregar-servicio {
+    background-color: #9c6ce9;
+}
+
+#agregar-servicio:hover {
+    background-color: #4a4eeb; 
+}

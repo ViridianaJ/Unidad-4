@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 003 - Equipos</title>
+    <link rel="stylesheet" href="equiposCSS.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema Solar</h1>
+        <!-- Canvas para la imagen principal -->
+        <div id="canvas" class="canvas">
+            <img id="main-image" src="imagenes/sistemasolar.jpg" alt="Sistema solar">
+        </div>
+        <!-- Botones para los planetas -->
+        <div class="buttons">
+            <img class="button" src="imagenes/sol.jpg" alt="Sol" data-description="El Sol es la estrella del sistema solar." data-image="imagenes/sol.jpg">
+            <img class="button" src="imagenes/mercurio.jpg" alt="Mercurio" data-description="Mercurio es el planeta más cercano al Sol y el más pequeño." data-image="imagenes/mercurio.jpg">
+            <img class="button" src="imagenes/venus.jpg" alt="Venus" data-description="Venus, el planeta hermano de la Tierra." data-image="imagenes/venus.jpg">
+            <img class="button" src="imagenes/tierra.jpg" alt="Tierra" data-description="La Tierra es el único planeta conocido con vida." data-image="imagenes/tierra.jpg">
+            <img class="button" src="imagenes/marte.jpg" alt="Marte" data-description="Marte, conocido como el planeta rojo." data-image="imagenes/marte.jpg">
+            <img class="button" src="imagenes/jupiter.jpg" alt="Júpiter" data-description="Júpiter, el planeta más grande del Sistema Solar." data-image="imagenes/jupiter.jpg">
+            <img class="button" src="imagenes/saturno.jpg" alt="Saturno" data-description="Saturno y sus impresionantes anillos." data-image="imagenes/saturno.jpg">
+            <img class="button" src="imagenes/urano.jpg" alt="Urano" data-description="Urano, el gigante helado." data-image="imagenes/urano.jpg">
+            <img class="button" src="imagenes/neptuno.jpg" alt="Neptuno" data-description="Neptuno, el planeta más lejano del Sol." data-image="imagenes/neptuno.jpg">
+        </div>
+        <!-- Área para mostrar la descripción -->
+        <textarea id="description" placeholder="El Sistema Solar está conformado por planetas, satélites, asteroides, cometas. Más allá de este sistema, abundan estrellas, galaxias y toda la complejidad del Universo que el humano intenta conocer." readonly></textarea>
+    </div>
+    <script src="equiposJS.js"></script>
+</body>
+</html>

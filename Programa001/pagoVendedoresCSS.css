@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f2f8; 
+    color: #4b0082; 
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #a500b5; 
+}
+
+p {
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(20% - 20px); 
+    padding: 4px; 
+    border: 2px solid #e084ca; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: border 0.3s;
+    font-size: 0.9em; 
+    height: 20px; 
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #a500b5; 
+}
+
+button {
+    background-color: #a500b5; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #8b008b; 
+}
+
+table {
+    width: 50%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 0.9em; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e1bee7; 
+}
+
+th {
+    background-color: #9c27b0; 
+    color: white; 
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f3e5f5; 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f1f7; 
+}
+
+tbody tr:hover {
+    background-color: #e1bee7; 
+}

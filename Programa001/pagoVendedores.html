@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 001 - Pago Vendedores</title>
+    <link rel="stylesheet" href="pagovendedoresCSS.css">
+</head>
+<body>
+    <h1>Pago a Vendedores</h1>
+    <p>Nombre: <input id="nom" type="text"></p>
+    <p>Sueldo Base: <input id="sueldoBase" type="number"></p>
+    <p>Venta 1: <input id="venta1" type="number"></p>
+    <p>Venta 2: <input id="venta2" type="number"></p>
+    <p>Venta 3: <input id="venta3" type="number"></p>
+    <p><button id="btncalcular" onclick="calcula();">CALCULAR</button></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Sueldo Base</th>
+                <th>Venta 1</th>
+                <th>Venta 2</th>
+                <th>Venta 3</th>
+                <th>Pago Total</th>
+            </tr>
+        </thead>
+        <tbody id="tablita">
+        </tbody>
+    </table>
+</body>
+<script src="PagoVendeJS.js"></script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 002 - Cobro con Descuento Variable </title>
+    <link rel="stylesheet" href="descuentoVariableCSS.css">
+</head>
+<body>
+
+    <h1>ClÍnica de Odontología</h1>
+    
+    <form id="odontologia-form">
+        <!-- Datos del Cliente -->
+        <fieldset>
+            <legend>Datos del Cliente</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre del paciente" required>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="Edad del paciente" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono del paciente" required>
+        </fieldset>
+        
+        <!-- Costo de Servicios o Productos -->
+        <fieldset>
+            <legend>Servicios y Productos</legend>
+            <div id="servicios">
+                <div class="servicio">
+                    <label for="servicio-select">Selecciona un servicio:</label>
+                    <select class="servicio-select">
+                        <option value="500">Carillas ($500 MXN)</option>
+                        <option value="1200">Coronas ($1200 MXN)</option>
+                        <option value="300">Caries ($300 MXN)</option>
+                        <option value="10000">Rehabilitación con Implantes ($10,000 MXN)</option>
+                        <option value="1500">Blanqueamiento ($1500 MXN)</option>
+                        <option value="8000">Ortodoncia ($8,000 MXN)</option>
+                        <option value="3500">Endodoncia ($3,500 MXN)</option>
+                        <option value="4000">Periodoncia ($4,000 MXN)</option>
+                        <option value="7000">Cirugía ($7,000 MXN)</option>
+                    </select>
+                    
+                    <label>Descuento (%):</label>
+                    <input type="number" class="descuento-servicio" placeholder="Descuento (%)" step="0.01">
+                </div>
+            </div>
+            <button type="button" id="agregar-servicio">Agregar Servicio</button>
+        </fieldset>
+
+        <!-- Costos -->
+        <fieldset>
+            <legend>Costos</legend>
+            <p>Costo Total sin Descuento: <span id="total-sin-descuento">$0.00</span></p>
+            <p>Costo Total con Descuento: <span id="total-con-descuento">$0.00</span></p>
+        </fieldset>
+        
+        <button type="button" id="calcular">Calcular</button>
+    </form>
+    <script src="descuentoVariableJS.js"></script>
+</body>
+</html>
